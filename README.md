@@ -1,4 +1,4 @@
-# 🚗 Araç Değerlendirme - Kapsamlı Veri Bilimi Projesi
+# Araç Değerlendirme - Kapsamlı Veri Bilimi Projesi
 
 **Proje Adı**: Car Evaluation Dataset - Comprehensive ML Analysis with SHAP & LIME
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📊 Veri Seti Hakkında
+## Veri Seti Hakkında
 
 - **Kaynak**: UCI Machine Learning Repository
 - **Toplam Örnek**: 1728
@@ -21,7 +21,7 @@
 
 ---
 
-## 🚀 Hızlı Başlangıç
+## Hızlı Başlangıç
 
 ### 1. Kurulum
 
@@ -53,29 +53,29 @@ Ardından `car_evaluation_ml_project.ipynb` dosyasını açın.
 
 ---
 
-## 📖 Proje Yapısı ve İçeriği
+## Proje Yapısı ve İçeriği
 
-### Bölüm 1: Veri Yükleme ve EDA (📊)
+### Bölüm 1: Veri Yükleme ve EDA
 - Veriyi pandas'a yükle
 - Temel istatistikler ve şekil
 - Eksik değer kontrolü
 - Sınıf dağılımı analizi
 
-### Bölüm 2: Feature Analizi (🔍)
+### Bölüm 2: Feature Analizi
 - Her feature'ın kategorik değerleri
 - Feature-Class ilişki görselleştirmesi
 
-### Bölüm 3: Information Gain Hesaplama (⚡)
+### Bölüm 3: Information Gain Hesaplama
 - Mutual Information ile feature importance
 - Her feature'ın sınıflandırmaya katkısı
 - Matplotlib bar chart görselleştirmesi
 
-### Bölüm 4: Kategorik Encoding (🔧)
+### Bölüm 4: Kategorik Encoding
 - One-Hot Encoding uygulaması
 - Train-Test Split (80-20, stratified)
 - Data preprocessing pipeline
 
-### Bölüm 5: Feature Engineering (🛠️)
+### Bölüm 5: Feature Engineering
 - Ordinal Encoding (price levels)
 - Yeni engineered features:
   - `total_price` = buying + maint
@@ -84,38 +84,38 @@ Ardından `car_evaluation_ml_project.ipynb` dosyasını açın.
   - `quality_score` = safety + comfort_score
   - `value_for_money` = quality_score / (total_price + 1)
 
-### Bölüm 6: Model Eğitimi (🤖)
+### Bölüm 6: Model Eğitimi
 - **Logistic Regression** (baseline)
 - **Random Forest** (tree-based)
 - **XGBoost** (boosting)
 - Cross-validation (5-Fold)
 - Confusion Matrix ve classification reports
 
-### Bölüm 7: Model Değerlendirmesi (📈)
+### Bölüm 7: Model Değerlendirmesi
 - Confusion matrix heatmaps
 - Accuracy ve F1-Score karşılaştırması
 - Model Performance Overview
 
-### Bölüm 8: SHAP Interpretability (🎯)
+### Bölüm 8: SHAP Interpretability
 - TreeExplainer (XGBoost)
 - Feature importance (global perspective)
 - Beeswarm plot (feature value → impact)
 - Per-sample SHAP value analysis
 
-### Bölüm 9: LIME Interpretability (💡)
+### Bölüm 9: LIME Interpretability
 - Local explanations
 - Örnek tahminler için rule-based explanations
 - Model-agnostic interpretability
 - İnsan okunur kurallar
 
-### Bölüm 10: Proje Özeti (📋)
+### Bölüm 10: Proje Özeti
 - Ana bulgular
 - Insights ve öneriler
 - Sonuçlar ve çıkarımlar
 
 ---
 
-## 🎯 Başlıca Bulgular
+## Başlıca Bulgular
 
 ### 1. En Önemli Features
 - **Safety** (en yüksek Information Gain)
@@ -124,7 +124,7 @@ Ardından `car_evaluation_ml_project.ipynb` dosyasını açın.
 - **Maint** (bakım fiyatı)
 
 ### 2. Model Performansı
-- **XGBoost**: En yüksek accuracy (~%96)
+- **XGBoost**: En yüksek accuracy (~%98)
 - **Random Forest**: Eşit performans, daha interpret edilebilir
 - **Logistic Regression**: Baseline (~%90 accuracy)
 
@@ -140,7 +140,7 @@ Ardından `car_evaluation_ml_project.ipynb` dosyasını açın.
 
 ---
 
-## 📁 Dosya Yapısı
+## Dosya Yapısı
 
 ```
 veribilimiproje/
@@ -155,7 +155,7 @@ veribilimiproje/
 
 ---
 
-## 🔧 Teknik Detaylar
+## Teknik Detaylar
 
 ### Kütüphaneler
 - **pandas, numpy**: Veri işleme
@@ -180,7 +180,7 @@ veribilimiproje/
 
 ---
 
-## 💡 Öneriler ve İlerlemeler
+## Öneriler ve İlerlemeler
 
 1. **Dengesiz Sınıflar**: Class weights veya SMOTE uygulanabilir
 2. **Hiperparametre Tuning**: GridSearchCV ile optimize edilebilir
@@ -190,7 +190,7 @@ veribilimiproje/
 
 ---
 
-## 🎓 Proje Sunumu İçin Tips
+## Proje Sunumu İçin Tips
 
 1. **EDA Bulguları**: Sınıf dengesizliğini vurgula
 2. **Information Gain**: Hangi features neden önemli
@@ -201,7 +201,7 @@ veribilimiproje/
 
 ---
 
-## 📝 Notlar
+## Notlar
 
 - Notebook'ı çalıştırmadan önce `data/car.data` dosyasının varlığını kontrol et
 - Plotlar interactive değil (static matplotlib), PDF olarak export edilebilir
@@ -209,13 +209,7 @@ veribilimiproje/
 
 ---
 
-## 👨‍💻 Geliştirici
-
-Bu proje, Car Evaluation Dataset üzerinde kapsamlı veri bilimi analizi yapmak amacıyla oluşturulmuştur.
-
----
-
-## 📚 Kaynaklar
+## Kaynaklar
 
 - [UCI ML Repository - Car Evaluation](https://archive.ics.uci.edu/ml/datasets/car+evaluation)
 - [SHAP Documentation](https://shap.readthedocs.io/)
@@ -225,7 +219,4 @@ Bu proje, Car Evaluation Dataset üzerinde kapsamlı veri bilimi analizi yapmak 
 
 ---
 
-**Last Updated**: May 3, 2026
-
-**Status**: ✅ Proje Tamamlandı
 # car-evaluation
